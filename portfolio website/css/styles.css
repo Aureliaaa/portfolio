@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'hakuna_sans';
+  src: url('hakuna-sans-webfont.woff2') format('woff2'),
+       url('hakuna-sans-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+h1 {
+  font-family: 'hakuna_sans', Arial, sans-serif;
+}

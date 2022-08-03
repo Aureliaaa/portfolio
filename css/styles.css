@@ -127,6 +127,8 @@ body {
 }
 
 .menu-items li {
+  text-align: right;
+  list-style-position: right;
   list-style: none;
   margin-left: 1.5rem;
   margin-bottom: 0.5rem;
@@ -214,10 +216,9 @@ body {
     padding-top: 100px;
     height: 100vh;
     max-width: 300px;
-    transform: translate(3000%);
+    transform: translate(1000%);
     display: flex;
     flex-direction: column;
-    margin-right: 40px;
     padding-right: 50px;
     transition: transform 0.5s ease-in-out;
   }
@@ -230,7 +231,7 @@ body {
 
 
   .navbar-container input[type="checkbox"]:checked ~ .menu-items {
-    transform: translateX(93vw);
+    transform: translateX(89vw);
   }
 
   .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {

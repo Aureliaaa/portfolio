@@ -91,82 +91,196 @@
 
 /*Actual Styles*/
 
+body {
+  background-color: rgb(36, 36, 36);
+  overflow-y: hidden; 
+  overflow-x: hidden; 
+}
 
 
 /* The sidebar menu */
-.sidebar {
-  border-radius: 20px;
-  height: 30%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 2%;
-  right: 1%;
-  background-color: #111; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-/* The sidebar links */
-.sidebar a {
-  font-family: 'nb_architekt_stdregular', Arial, sans-serif;
-  padding: 8px 8px 8px 32px;
+.html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'nb_architekt_std_neuebold', sans-serif;
+}
+
+/* ............/navbar/............ *
+
+/* desktop mode............/// */
+
+.navbar input[type="checkbox"],
+
+.menu-items {
+  order: 2;
+  display: flex;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.menu-items a {
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
 }
 
-/* When you mouse over the navigation links, change their color */
-.sidebar a:hover {
-  color: #f1f1f1;
+.menu-items a:hover {
+  color: #969696;
+  transition: color 0.3s ease-in-out;
 }
 
-/* Position and style the close button (top right corner) */
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  margin-left: 2%;
-  font-size: 36px;
-  text-align: center;
-}
 
-/* The button used to open the sidebar */
-.openbtn {
-  float: right;
-  margin-right: 2%;
-  font-size: 35px;
-  cursor: pointer;
-  color: rgb(0, 0, 0);
-  background-color: #f1f1f100;
-  padding: 10px 15px;
-  border: none;
-}
+/* ......../ media query /.......... */
 
-.backbutton {
-  float: right;
-}
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
-}
 
+  .navbar {
+    opacity: 0.95;
+  }
+
+  .navbar-container input[type="checkbox"],
+  .navbar-container .hamburger-lines {
+    display: block;
+  }
+
+  .navbar-container {
+    display: block;
+    position: relative;
+    height: 64px;
+  }
+
+  .navbar-container input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 30px;
+    top: 20px;
+    right: 20px;
+    z-index: 5;
+    opacity: 0;
+  }
+
+  .navbar-container .hamburger-lines {
+    display: block;
+    height: 23px;
+    width: 35px;
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .navbar-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+  }
+
+  .navbar-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .navbar .menu-items {
+    padding-top: 100px;
+    height: 100vh;
+    max-width: 300px;
+    transform: translate(3000%);
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    padding-right: 50px;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .navbar .menu-items li {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+
+  .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(93vw);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(35deg);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-35deg);
+  }
+
+  
+  html {
+    font-size: 65%;
+  }
+
+  .navbar .menu-items li{
+      font-size: 1.6rem;
+  }
+
+  .navbar .menu-items li {
+    margin-bottom: 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  
 .hi {
   position: absolute;
-  text-align: center;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
   top: 35vh;
-  left: 40vw;
+
 }
 
 .hi h1 {
+  color: #f1f1f1;
   font-family: 'hakuna_sans', Arial, sans-serif;
-  font-size: 48px;
+  font-size: 72px;
+  text-align: center;
 }
 
 .hi h2 {
+  color: #f1f1f1;
   font-family: 'modern_sanslight', Arial, sans-serif;
   font-size: 32px;
+  text-align: center;
 }

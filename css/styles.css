@@ -91,17 +91,12 @@
 
 /*Actual Styles*/
 
-h1 {
-  font-family: 'hakuna_sans', Arial, sans-serif;
-}
 
-p {
-  font-family: 'nb_architekt_std_neueregular', sans-serif;
-}
 
 /* The sidebar menu */
 .sidebar {
-  height: 35%; /* 100% Full-height */
+  border-radius: 20px;
+  height: 30%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
@@ -115,6 +110,7 @@ p {
 
 /* The sidebar links */
 .sidebar a {
+  font-family: 'nb_architekt_stdregular', Arial, sans-serif;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -132,29 +128,45 @@ p {
 .sidebar .closebtn {
   position: absolute;
   top: 0;
-  right: 5%;
+  margin-left: 2%;
   font-size: 36px;
-  margin-right: 50px;
+  text-align: center;
 }
 
 /* The button used to open the sidebar */
 .openbtn {
   float: right;
-
-  font-size: 20px;
+  margin-right: 2%;
+  font-size: 35px;
   cursor: pointer;
-  background-color: #111;
-  color: white;
+  color: rgb(0, 0, 0);
+  background-color: #f1f1f100;
   padding: 10px 15px;
   border: none;
 }
 
-.openbtn:hover {
-  background-color: #444;
+.backbutton {
+  float: right;
 }
-
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
+}
+
+.hi {
+  position: absolute;
+  text-align: center;
+  top: 35vh;
+  left: 40vw;
+}
+
+.hi h1 {
+  font-family: 'hakuna_sans', Arial, sans-serif;
+  font-size: 48px;
+}
+
+.hi h2 {
+  font-family: 'modern_sanslight', Arial, sans-serif;
+  font-size: 32px;
 }

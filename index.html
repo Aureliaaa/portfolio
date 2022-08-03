@@ -3,27 +3,20 @@
 
 <head>
     <title>Home</title>
+    <!--Import CSS-->
     <link rel="stylesheet" href="css/styles.css" type="text/css" charset="utf-8" />
 
-    <script>
-        /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
-        function openNav() {
-        document.getElementById("mySidebar").style.width = "150px";
-        document.getElementById("main").style.marginLeft = "250px";
-        }
-
-        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-        function closeNav() {
-        document.getElementById("mySidebar").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
-        }
-    </script>
-
+    <!--Import Javascript-->
+    <script src="jar/scripts.js"></script>
 </head>
 
 <body>
+
+    <!--Navigation Bar--> 
     <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div id="backbutton">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">></a>
+        </div>
         <a href="#">Home</a>
         <a href="#">Services</a>
         <a href="#">Clients</a>
@@ -35,8 +28,12 @@
       </div>
 
     </div>
-    <h1>THIS IS A HEADING</h1>
-    <p>This is a paragraph.</p>
+
+    <div class="hi">
+        <h2>Hi I'm a</h2>
+        <h1>Designer</h1>
+    </div>
+
 
 </body>
 

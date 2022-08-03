@@ -1,12 +1,160 @@
+/*Imported fonts*/
 @font-face {
   font-family: 'hakuna_sans';
-  src: url('hakuna-sans-webfont.woff2') format('woff2'),
-       url('hakuna-sans-webfont.woff') format('woff');
+  src: url('../font/hakuna-sans-webfont.woff2') format('woff2'),
+       url('../font/hakuna-sans-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
 }
 
+@font-face {
+  font-family: 'modern_sanslight';
+  src: url('../font/modernsans-light-webfont.woff2') format('woff2'),
+       url('../font/modernsans-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'nb_architekt_stdbold';
+  src: url('../font/nbarchitektstd-bold-webfont.woff2') format('woff2'),
+       url('../font/nbarchitektstd-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'nb_architekt_stdlight';
+  src: url('../font/nbarchitektstd-light-webfont.woff2') format('woff2'),
+       url('../font/nbarchitektstd-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'nb_architekt_stdregular';
+  src: url('font/nbarchitektstd-regular-webfont.woff2') format('woff2'),
+       url('font/nbarchitektstd-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'nb_architekt_std_neuebold';
+  src: url('../font/nbarchitektstdneue-bold-webfont.woff2') format('woff2'),
+       url('../font/nbarchitektstdneue-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'nb_architekt_std_neuelight';
+  src: url('../font/nbarchitektstdneue-light-webfont.woff2') format('woff2'),
+       url('../font/nbarchitektstdneue-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'nb_architekt_std_neueregular';
+  src: url('../font/nbarchitektstdneue-regular-webfont.woff2') format('woff2'),
+       url('../font/nbarchitektstdneue-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/*Actual Styles*/
+
 h1 {
   font-family: 'hakuna_sans', Arial, sans-serif;
+}
+
+p {
+  font-family: 'nb_architekt_std_neueregular', sans-serif;
+}
+
+/* The sidebar menu */
+.sidebar {
+  height: 35%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 2%;
+  right: 1%;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  float: right;
+
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
 }

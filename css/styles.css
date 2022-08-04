@@ -111,31 +111,26 @@ body {
   font-size: 62.5%;
 }
 
-body {
-  font-family: 'nb_architekt_std_neuebold', sans-serif;
-}
-
-/* ............/navbar/............ *
-
-/* desktop mode............/// */
+/* ............/navbar/............ */
 
 .navbar input[type="checkbox"],
 
 .menu-items {
   order: 2;
-  display: flex;
 }
 
 .menu-items li {
+  font-family: 'nb_architekt_std_neuebold', sans-serif;
   text-align: right;
-  list-style-position: right;
   list-style: none;
-  margin-left: 1.5rem;
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
 }
 
 .menu-items a {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  font-family: 'nb_architekt_std_neuebold', sans-serif;
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-weight: 500;
@@ -149,7 +144,6 @@ body {
 
 
 /* ......../ media query /.......... */
-
 
   .navbar {
     opacity: 0.95;
@@ -213,13 +207,12 @@ body {
   }
 
   .navbar .menu-items {
-    padding-top: 100px;
+    position: relative;
+    padding-top: 10vh;
     height: 100vh;
-    max-width: 300px;
-    transform: translate(1000%);
+    transform: translate(20vw);
     display: flex;
     flex-direction: column;
-    padding-right: 50px;
     transition: transform 0.5s ease-in-out;
   }
 
@@ -231,7 +224,7 @@ body {
 
 
   .navbar-container input[type="checkbox"]:checked ~ .menu-items {
-    transform: translateX(89vw);
+    transform: translateX(-2vw);
   }
 
   .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
@@ -261,8 +254,15 @@ body {
     font-weight: 500;
   }
 
-  
-.hi {
+
+* { color:#fff; 
+  text-decoration: none; 
+  font-family: 'hakuna_sans'; 
+  text-align: center;
+  font-size: 7rem;
+}
+
+.typewriter {
   position: absolute;
   align-content: center;
   justify-content: center;
@@ -272,16 +272,7 @@ body {
 
 }
 
-.hi h1 {
-  color: #f1f1f1;
-  font-family: 'hakuna_sans', Arial, sans-serif;
-  font-size: 72px;
-  text-align: center;
-}
-
-.hi h2 {
-  color: #f1f1f1;
-  font-family: 'modern_sanslight', Arial, sans-serif;
-  font-size: 32px;
-  text-align: center;
+.typewriter h2 {
+  font-family: 'modern_sanslight', sans-serif;
+  font-size: 2rem;
 }

@@ -92,17 +92,10 @@
 /*Actual Styles*/
 body {
   background-color: rgba(29, 29, 29, 0.8);
-  overflow-y: hidden; 
-  overflow-x: hidden; 
 }
 
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -2;
+::-webkit-scrollbar {
+  width: 0px;
 }
 
 /* The sidebar menu */
@@ -272,6 +265,11 @@ body {
   font-size: 7rem;
 }
 
+.section {
+  text-align:center;
+  font-size: 3em;
+}
+
 .typewriter {
   position: absolute;
   align-content: center;
@@ -287,23 +285,24 @@ body {
   font-size: 2rem;
 }
 
-.about {
+#about {
   background-color: rgb(235, 235, 235);
   top: 100vh;
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: relative;
   align-content: left;
+  z-index: -1;
 }
 
-.about h1 {
+#about h1 {
   color: rgb(50, 50, 50);
   text-align: left;
   padding-left: 5vw;
   padding-top: 5vh;
 }
 
-.about p {
+#about p {
 	font-family: 'modern_sanslight', sans-serif;
 	font-size: 2rem ;
 	color: rgb(50, 50, 50);
@@ -311,7 +310,39 @@ body {
 	padding-left: 5vw;
 	padding-top: 5vh;
 }
-.section {
-  text-align:center;
-  font-size: 3em;
+
+#portfolio {
+  background-color: rgba(29, 29, 29, 0.8);
+  top: 100vh;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  align-content: left;
+  z-index: -1;
+}
+
+#contact {
+  background-color: rgb(235, 235, 235);
+  top: 100vh;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  align-content: left;
+  z-index: -1;
+}
+
+#contact h1 {
+  color: rgb(50, 50, 50);
+  text-align: left;
+  padding-left: 5vw;
+  padding-top: 5vh;
+}
+
+#contact p {
+	font-family: 'modern_sanslight', sans-serif;
+	font-size: 2rem ;
+	color: rgb(50, 50, 50);
+	text-align: left;
+	padding-left: 5vw;
+	padding-top: 5vh;
 }

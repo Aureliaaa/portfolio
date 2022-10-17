@@ -90,10 +90,8 @@
 }
 
 /*Actual Styles*/
-
 body {
   background-color: rgb(29, 29, 29);
-  overflow-y: hidden; 
   overflow-x: hidden; 
 }
 
@@ -146,6 +144,9 @@ body {
 /* ......../ media query /.......... */
 
   .navbar {
+    position: fixed;
+    top: 0%;
+    right: 1%;
     opacity: 0.95;
   }
 
@@ -275,4 +276,33 @@ body {
 .typewriter h2 {
   font-family: 'modern_sanslight', sans-serif;
   font-size: 2rem;
+}
+
+.about {
+  background-color: rgb(235, 235, 235);
+  top: 100vh;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  align-content: left;
+}
+
+.about h1 {
+  color: rgb(50, 50, 50);
+  text-align: left;
+  padding-left: 5vw;
+  padding-top: 5vh;
+}
+
+.about p {
+	font-family: 'modern_sanslight', sans-serif;
+	font-size: 2rem ;
+	color: rgb(50, 50, 50);
+	text-align: left;
+	padding-left: 5vw;
+	padding-top: 5vh;
+}
+.section {
+  text-align:center;
+  font-size: 3em;
 }

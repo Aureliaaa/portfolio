@@ -279,6 +279,9 @@
 }
 
 #home {
+  position: fixed;
+  z-index: -1;
+  align-content: left;
   background-image: url("/img/bg.png");
   width: 100vw;
   height: 100vh;

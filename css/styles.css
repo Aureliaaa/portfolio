@@ -93,6 +93,7 @@
 body {
   background-color: rgba(0, 0, 0, 0.8);
 }
+
 ::-webkit-scrollbar {
   width: 0px;
 }
@@ -283,9 +284,11 @@ body {
   font-family: 'modern_sanslight', sans-serif;
   font-size: 2rem;
 }
+#home {
+  background-image: url("/img/bg.png");
+}
 
 #about {
-  background-image: url(/img/bg.png);
   background-color: rgb(235, 235, 235);
   top: 100vh;
   width: 100vw;

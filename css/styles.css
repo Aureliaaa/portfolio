@@ -91,9 +91,8 @@
 
 /*Actual Styles*/
 body {
-  background-color: rgba(29, 29, 29, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
-
 ::-webkit-scrollbar {
   width: 0px;
 }
@@ -286,6 +285,7 @@ body {
 }
 
 #about {
+  background-image: url(/img/bg.png);
   background-color: rgb(235, 235, 235);
   top: 100vh;
   width: 100vw;

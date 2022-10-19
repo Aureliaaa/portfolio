@@ -303,10 +303,10 @@ body {
 }
 
 #home img {
-  align-self: center;
   height: 100vh;
+  object-position: top -3vw left 5vw;
   overflow: hidden;
-  -webkit-transform: scale(1.3);
+  -webkit-transform: scale(1.7);
   transform: 1.3;
   -webkit-transform-origin: top;
   transform-origin: top;

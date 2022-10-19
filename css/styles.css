@@ -319,7 +319,6 @@ body {
   width: 100vw;
   height: 100vh;
   position: relative;
-  align-content: left;
   z-index: -1;
 }
 
@@ -345,6 +344,14 @@ body {
 	color: rgb(0, 0, 0);
 	padding-left: 5vw;
 	padding-top: 2vh;
+}
+
+#about img {
+  position: relative;
+  width: 65vw;
+  overflow: hidden;
+  object-position: top -35vh left -12vw;
+  object-fit: cover
 }
 
 

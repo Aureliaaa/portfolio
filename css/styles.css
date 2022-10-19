@@ -324,15 +324,17 @@ body {
 }
 
 #about h1 {
+  text-align: justify;
+  text-justify: inter-word;
   color: rgb(0, 0, 0);
-  text-align: left;
   padding-left: 5vw;
   padding-top: 5vh;
 }
 
 #about h2 {
+  text-align: justify;
+  text-justify: inter-word;
   color: rgb(77, 77, 77);
-  text-align: left;
   padding-left: 5vw;
   font-size: 2.5rem;
 }
@@ -341,10 +343,10 @@ body {
 	font-family: 'modern_sanslight', sans-serif;
 	font-size: 2rem ;
 	color: rgb(0, 0, 0);
-	text-align: left;
 	padding-left: 5vw;
 	padding-top: 2vh;
 }
+
 
 #portfolio {
   background-color: rgba(29, 29, 29, 0.8);

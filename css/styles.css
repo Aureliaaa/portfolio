@@ -365,19 +365,81 @@ body {
 }
 
 #contact {
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(0, 0, 0);
   width: 100vw;
   height: 100vh;
   position: relative;
-  align-content: left;
+  text-align: center;
   z-index: -1;
 }
+#center {
+  padding-top: 48vh;
+}
 
-#contact h1 {
-  color: rgb(50, 50, 50);
-  text-align: left;
-  padding-left: 5vw;
-  padding-top: 5vh;
+#damian {
+  padding-left: 20vw;
+  float: left;
+  font-size: 3rem;
+  font-family: 'nb_architekt_std_neuebold', sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+#instagram a {
+  float: left;
+  font-size: 3rem;
+  font-family: 'nb_architekt_std_neuebold', sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+#instagram a:hover {
+  font-size: 3rem;
+  font-family: 'nb_architekt_std_neuebold', sans-serif;
+  background: -webkit-linear-gradient(180deg,orange , rgb(243, 29, 172));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#spotify a {
+  float: left;
+  font-size: 3rem;
+  font-family: 'nb_architekt_std_neuebold', sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+#spotify a:hover {
+  font-size: 3rem;
+  font-family: 'nb_architekt_std_neuebold', sans-serif;
+  color: rgb(101, 212, 110);
+}
+
+#linkedin a {
+  float: left;
+  font-size: 3rem;
+  font-family: 'nb_architekt_std_neuebold', sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+
+#linkedin a:hover {
+  font-size: 3rem;
+  font-family: 'nb_architekt_std_neuebold', sans-serif;
+  color: rgb(88, 126, 187);
+}
+
+#email a {
+  float: left;
+  font-size: 3rem;
+  font-family: 'nb_architekt_std_neuebold', sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+
+#email a:hover {
+  font-size: 3rem;
+  font-family: 'nb_architekt_std_neuebold', sans-serif;
+  background: -webkit-linear-gradient(0deg,rgb(230, 230, 230) , rgb(70, 70, 70));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #contact p {

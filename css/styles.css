@@ -105,7 +105,7 @@
 }
 
 .html {
-  font-size: 62.5%;
+  font-size: 100%;
 }
 
 /* ............/navbar/............ */
@@ -271,13 +271,13 @@
   justify-content: center;
   margin: auto;
   width: 100%;
-  top: 35vh;
+  top: 40vh;
 
 }
 
 .typewriter h2 {
   font-family: 'modern_sanslight', sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 body {
@@ -327,6 +327,7 @@ body {
   color: rgb(0, 0, 0);
   padding-left: 5vw;
   padding-top: 5vh;
+  font-size: 8rem
 }
 
 #about h2 {
@@ -334,7 +335,7 @@ body {
   text-justify: inter-word;
   color: rgb(77, 77, 77);
   padding-left: 5vw;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 #about p {
@@ -376,7 +377,7 @@ body {
 }
 
 #damian {
-  padding-left: 20vw;
+  padding-left: 30vw;
   float: left;
   font-size: 3rem;
   font-family: 'nb_architekt_std_neuebold', sans-serif;

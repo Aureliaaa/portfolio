@@ -304,9 +304,8 @@ body {
 
 #home img {
   height: 100vh;
-  object-position: top -3vw left 5vw;
   overflow: hidden;
-  -webkit-transform: scale(1.7);
+  -webkit-transform: scale(1.5);
   transform: 1.3;
   -webkit-transform-origin: top;
   transform-origin: top;

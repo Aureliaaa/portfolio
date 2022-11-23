@@ -364,6 +364,69 @@ body {
   z-index: -1;
 }
 
+.column {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  width: 33.33vw;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+.column h1 {
+  padding-top: 10vh;
+  padding-left: 7vw;
+  font-family: 'nb_architekt_std_neuebold', sans-serif;
+  font-size: 3vw;
+  text-align: left;
+}
+
+#left {
+  width: 33.33vw;
+  height: 100vh;
+  background-color: rgb(27, 27, 27);
+}
+
+#left h2{
+  font-family: 'nb_architekt_std_neuebold', sans-serif;
+  font-size: 6vw;
+  writing-mode: horizontal-tb;
+  padding-left: 15vw;
+  padding-top: 88vh;
+  float: none;
+}
+
+#middle {
+  width: 33.33vw;
+  height: 100vh;
+  background-color: #969696;
+}
+
+#middle h2{
+  font-family: 'nb_architekt_std_neuebold', sans-serif;
+  font-size: 6vw;
+  writing-mode: horizontal-tb;
+  padding-left: 8vw;
+  padding-top: 88vh;
+  float: none;
+}
+
+
+#right {
+  width: 33.33vw;
+  height: 100vh;
+  background-color: rgb(221, 221, 221);
+}
+
+#right h2{
+  font-family: 'nb_architekt_std_neuebold', sans-serif;
+  font-size: 6vw;
+  writing-mode: horizontal-tb;
+  padding-left: 15vw;
+  padding-top: 88vh;
+  float: none;
+}
+
 #contact {
   background-color: rgb(0, 0, 0);
   width: 100vw;

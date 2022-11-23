@@ -120,13 +120,13 @@
   font-family: 'nb_architekt_std_neuebold', sans-serif;
   text-align: right;
   list-style: none;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5vh;
   font-size: 1.2rem;
 }
 
 .menu-items a {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  margin-bottom: 0.5vh;
   font-family: 'nb_architekt_std_neuebold', sans-serif;
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -217,8 +217,8 @@
   }
 
   .navbar .menu-items li {
-    margin-bottom: 1.5rem;
-    font-size: 1.3rem;
+    margin-bottom: 1.5vh;
+    font-size: 1.6vw;
     font-weight: 500;
   }
 
@@ -246,12 +246,12 @@
   }
 
   .navbar .menu-items li{
-      font-size: 1.6rem;
+      font-size: 2rem;
   }
 
   .navbar .menu-items li {
-    margin-bottom: 2.5rem;
-    font-size: 1.8rem;
+    margin-bottom: 3vh;
+    font-size: 2rem;
     font-weight: 500;
   }
 
@@ -277,7 +277,7 @@
 
 .typewriter h2 {
   font-family: 'modern_sanslight', sans-serif;
-  font-size: 3rem;
+  font-size: 1.6vw;
 }
 
 body {
@@ -297,7 +297,7 @@ body {
 }
 
 #home a {
-  font-size: 3rem;
+  font-size: 1.6vw;
   position: absolute;
   top: 55vh;
 }
@@ -327,7 +327,7 @@ body {
   color: rgb(0, 0, 0);
   padding-left: 5vw;
   padding-top: 5vh;
-  font-size: 8rem
+  font-size: 5vw
 }
 
 #about h2 {
@@ -335,7 +335,7 @@ body {
   text-justify: inter-word;
   color: rgb(77, 77, 77);
   padding-left: 5vw;
-  font-size: 3rem;
+  font-size: 2.5vw;
 }
 
 #about p {
@@ -379,20 +379,20 @@ body {
 #damian {
   padding-left: 30vw;
   float: left;
-  font-size: 3rem;
+  font-size: 1.6vw;
   font-family: 'nb_architekt_std_neuebold', sans-serif;
   color: rgb(255, 255, 255);
 }
 
 #instagram a {
   float: left;
-  font-size: 3rem;
+  font-size: 1.6vw;
   font-family: 'nb_architekt_std_neuebold', sans-serif;
   color: rgb(255, 255, 255);
 }
 
 #instagram a:hover {
-  font-size: 3rem;
+  font-size: 1.6vw;
   font-family: 'nb_architekt_std_neuebold', sans-serif;
   background: -webkit-linear-gradient(180deg,orange , rgb(243, 29, 172));
   -webkit-background-clip: text;
@@ -401,41 +401,41 @@ body {
 
 #spotify a {
   float: left;
-  font-size: 3rem;
+  font-size: 1.6vw;
   font-family: 'nb_architekt_std_neuebold', sans-serif;
   color: rgb(255, 255, 255);
 }
 
 #spotify a:hover {
-  font-size: 3rem;
+  font-size: 1.6vw;
   font-family: 'nb_architekt_std_neuebold', sans-serif;
   color: rgb(101, 212, 110);
 }
 
 #linkedin a {
   float: left;
-  font-size: 3rem;
+  font-size: 1.6vw;
   font-family: 'nb_architekt_std_neuebold', sans-serif;
   color: rgb(255, 255, 255);
 }
 
 
 #linkedin a:hover {
-  font-size: 3rem;
+  font-size: 1.6vw;
   font-family: 'nb_architekt_std_neuebold', sans-serif;
   color: rgb(88, 126, 187);
 }
 
 #email a {
   float: left;
-  font-size: 3rem;
+  font-size: 1.6vw;
   font-family: 'nb_architekt_std_neuebold', sans-serif;
   color: rgb(255, 255, 255);
 }
 
 
 #email a:hover {
-  font-size: 3rem;
+  font-size: 1.6vw;
   font-family: 'nb_architekt_std_neuebold', sans-serif;
   background: -webkit-linear-gradient(0deg,rgb(230, 230, 230) , rgb(70, 70, 70));
   -webkit-background-clip: text;

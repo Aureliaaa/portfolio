@@ -271,12 +271,12 @@ function verticalScroll(destination, duration, easing, callback) {
       e.preventDefault();
       hasInteracted = true;
       setActiveSection(prev);
-      scrollToSection(prev, 500, "easeInOutCubic");
+      scrollToSection(prev, 200, "easeInOutCubic");
     } else if (e.deltaY > 0 && isSection(next)) {
       e.preventDefault();
       hasInteracted = true;
       setActiveSection(next);
-      scrollToSection(next, 500, "easeInOutQuad");
+      scrollToSection(next, 200, "easeInOutQuad");
     }
     // Otherwise do nothing; native scroll continues.
   }
@@ -293,14 +293,14 @@ function verticalScroll(destination, duration, easing, callback) {
         e.preventDefault();
         hasInteracted = true;
         setActiveSection(next);
-        scrollToSection(next, 500, "easeInOutQuad");
+        scrollToSection(next, 200, "easeInOutQuad");
       }
     } else if (e.key === "ArrowUp" || e.key === "PageUp") {
       if (isSection(prev)) {
         e.preventDefault();
         hasInteracted = true;
         setActiveSection(prev);
-        scrollToSection(prev, 500, "easeInOutCubic");
+        scrollToSection(prev, 20, "easeInOutCubic");
       }
     }
   }

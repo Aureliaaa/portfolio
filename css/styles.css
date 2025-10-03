@@ -298,10 +298,31 @@ a {
 /* Keep the down arrow positioned responsively */
 .down-link {
     position: absolute;
-    bottom: 10vh;
+    bottom: 3vh;
     left: 50%;
     transform: translateX(-50%);
     font-size: clamp(16px, 1.6vw, 24px);
+}
+
+/* Act # text in bottom right */
+.act-text {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-family: "nb_architekt_std_neuebold", sans-serif;
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5em;
+}
+
+.act-text .act {
+    font-size: clamp(10px, 1.6vw, 20px);
+}
+
+.act-text .number {
+    font-size: clamp(20px, 3.2vw, 40px);
+    transform: translateY(0.25em);
 }
 
 /*Reduce motion for users who prefer it */
@@ -374,6 +395,7 @@ a {
     background-color: var(--bg-mid);
     color: #fff;
     display: block;
+    max-height: 100vh;
 }
 
 #portfolio .portfolio-header {

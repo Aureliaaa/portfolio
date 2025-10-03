@@ -254,23 +254,45 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: clamp(8px, 1.5vh, 20px);
+    gap: 0;
     padding: 0 4vw;
     text-align: center;
+    line-height: 1.25;
 }
 
-.typewriter h2 {
+.typewriter h3 {
     font-family: "modern_sanslight", sans-serif;
-    font-size: clamp(14px, 1.2vw, 22px);
+    font-size: clamp(10px, 1.6vw, 20px);
     margin-top: 0;
-    margin-bottom: 0.25em;
+    margin-bottom: 0; /* remove gap below h2 */
 }
+
+/* Ultra-tight spacing between typewriter headings */
+.typewriter h2 {
+    font-family: "nb_architekt_std_neuebold", sans-serif;
+    font-size: clamp(18px, 2.2vw, 34px);
+    margin-top: 0;
+    margin-bottom: 0; /* remove gap below h2 */
+}
+
 .typewriter h1 {
     font-size: var(--fs-hero);
-    margin-bottom: 0.25em;
+    margin-top: 0; /* remove gap above h1 */
+    margin-bottom: 0; /* keep tight with next element */
 }
+
+/* Optional: if you want the smallest possible gap */
+@media (min-width: 0px) {
+    .typewriter h2 {
+        margin-bottom: 0;
+    }
+    .typewriter h1 {
+        margin-top: 0;
+    }
+}
+
 .typewrite > .wrap {
-    border-right: 0.08em solid #fff;
+    border-right: 1em solid #fff;
 }
 
 /* Keep the down arrow positioned responsively */
@@ -376,44 +398,69 @@ a {
     padding: 2vh 0 6vh;
 }
 
+/* Frame: clip anything outside the viewport (keep this) */
 #portfolio .carousel-viewport {
     position: relative;
     width: 100%;
-    outline: none;
+    overflow: hidden;
 }
 
+/* Track and slide sizing: one full viewport per slide */
 #portfolio .carousel-track {
     display: flex;
     align-items: stretch;
     will-change: transform;
-    transition: transform 500ms ease-in-out; /* matches JS duration */
+    transition: transform 500ms ease-in-out;
+    width: 100%;
 }
 
 #portfolio .carousel-slide {
-    position: relative;
     flex: 0 0 100%;
-    padding: 0 4vw;
+    max-width: 100vw; /* ensure slide never exceeds viewport */
+    box-sizing: border-box;
+    padding: 0 4vw; /* keep inner padding */
     display: grid;
     grid-template-rows: auto auto;
     gap: 2vh;
     justify-items: center;
+    overflow: visible; /* do not clip the whole slide */
 }
 
+/* Ensure the media box is visible, centered, and not bleeding */
 #portfolio .slide-media {
-    width: min(1200px, 90vw);
-    height: clamp(240px, 55vh, 640px);
-    margin: 0;
+    width: 100%;
+    max-width: min(1200px, 92vw);
+    margin-left: auto;
+    margin-right: auto;
+    /* Hard height so the video has a box to render in */
+    height: clamp(320px, 55vh, 720px);
+    box-sizing: border-box;
+    overflow: hidden; /* clip inside media box, not the whole slide */
 }
-#portfolio .slide-media img,
+
+/* Make the video fill the media box cleanly */
 #portfolio .slide-media video {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
 }
 
+#portfolio .slide-media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* cover container while preserving aspect */
+    border-radius: 8px;
+}
+
+/* Caption centered and constrained (not clipped) */
 #portfolio .slide-caption {
-    width: min(1000px, 90vw);
+    width: 100%;
+    max-width: min(1000px, 92vw);
+    margin-left: auto;
+    margin-right: auto;
     text-align: left;
 }
 #portfolio .slide-caption h2 {
@@ -456,6 +503,13 @@ a {
 @media (prefers-reduced-motion: reduce) {
     #portfolio .carousel-track {
         transition: none !important;
+    }
+}
+
+/* Small-screen padding tweak */
+@media (max-width: 480px) {
+    #portfolio .carousel-slide {
+        padding: 0 3vw;
     }
 }
 

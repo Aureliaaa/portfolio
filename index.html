@@ -1,136 +1,225 @@
-<!DOCTYPE html>
-<html>
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-    <title>Home</title>
-    <!--Import CSS-->
-    <link rel="stylesheet" href="css/styles.css" type="text/css" charset="utf-8" />
+        <!-- CSS -->
+        <link
+            rel="stylesheet"
+            href="css/styles.css"
+            type="text/css"
+            charset="utf-8"
+        />
 
-    <!--Import Javascript-->
-    <script src="jar/scripts.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-</head>
+        <!-- jQuery must load before your script -->
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            defer
+        ></script>
+        <!-- Your JS -->
+        <script src="jar/scripts.js" defer></script>
+    </head>
 
-<body>
-    
-    <!--Navigation Bar--> 
-    <nav class="navbar">
-        <div class="navbar-container container">
-            <input type="checkbox" name="" id="">
-            <div class="hamburger-lines">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
+    <body>
+        <!--Navigation Bar-->
+        <nav class="brandbar" aria-label="Brand">
+            <div class="brandbar-container">
+                <a id="brand" href="#home" aria-label="Home">d.amixn</a>
             </div>
-            <ul class="menu-items">
-                <li><a href="#home">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#portfolio">portfolio</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
-        </div>
-    </nav>
+        </nav>
 
+        <!-- Existing Navigation Bar -->
+        <nav class="navbar" aria-label="Primary">
+            <div class="navbar-container container">
+                <input
+                    type="checkbox"
+                    id="nav-toggle"
+                    aria-label="Toggle navigation"
+                    aria-controls="primary-menu"
+                />
+                <label
+                    class="hamburger-lines"
+                    for="nav-toggle"
+                    aria-hidden="true"
+                >
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </label>
 
-        <div id="home">
-            <img src="img/bg5.jpg">
+                <ul id="primary-menu" class="menu-items">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <header id="home" class="section active">
+            <video class="bg-video" autoplay loop muted playsinline>
+                <source src="vid/badasf.mp4" type="video/mp4" />
+                <source src="vid/badasf.webm" type="video/webm" />
+                Your browser does not support the video tag.
+            </video>
 
             <div class="typewriter">
-                <h2>My name is Damian and I am a</h2>                    
-                <h1 class="typewrite" data-period="2000" data-type='[ "Designer", "Photographer", "Songwriter" ]'>
+                <h2>My name is Damian and I am a</h2>
+                <h1
+                    class="typewrite"
+                    data-period="2000"
+                    data-type='["Visionary","Photographer","Videographer", "UI/UX Designer"]'
+                >
                     <span class="wrap"></span>
                 </h1>
-
-            <a href="#about">v</a> 
-
-            </div>
-        </div>
-
-
-        <div id="about">
-            <h1 style="width: 45vw;float:left;">Hi, I'm <span style="color:rgb(154, 184, 229); font-size: 5vw;">Damian</span></h1>
-
-            <div style="width: 53vw;float: right;text-align: left">
-                <img src="img/damian2.jpg">
+                <a class="down-link" href="#about" aria-label="Scroll to About"
+                    >v</a
+                >
             </div>
 
-            <h2 style="width: 45vw;float:left;">and i design stuff</h2> 
-
-            <div style="width: 42vw;float: left;">
-                <div style="text-align: justify;
-                            padding-left: 5vw;
-                            padding-top: 3vh;
-                            text-justify: inter-word;
-                            font-family: 'modern_sanslight', sans-serif;
-                            font-size: 1.5vw ;
-                            color: rgb(0, 0, 0);">
-                    For as long as I can remember, the creative arts have always piqued my interest,
-                    with much of my childhood spent reading books and dabbling in arts and crafts.
-                    Creative writing has always been at the forefront of my creative expression with
-                    it recently manifesting itself in the form of songwriting. Introdcued to photography
-                    at a young age, I found myself often reaching for a camera wherever the opportunity
-                    presented itself, snapping photos of whatever drew my curiosity and attention at
-                    the time. All of these culminated in my interest and pursuit of a career in the arts,                         
-                    specifically in design. The digital world captivated me and served as an outlet for
-                    my desire of freedom. My creative style can be best described as "purposeful", "intricate"
-                    and "modern", with much care placed into the small and large details of whatever work I am 
-                    producing.
-                </div>
-
-                <div style="padding-top: 3vh;">
-                    <!--make these hyperlinks - call to action - link these to portfolio works-->
-                    <h2 style="font-size: 3.5vw;">graphics songwriting photography</h2>
-                </div>
-            </div>  
-        </div>
-
-
-         <div id="portfolio">
-            <div class="column">
-                <div id="left">
-                    <h1>graphics</h1>
-                    <h2>01</h2>
-                </div>
-            </div>
-
-            <div class="column">
-                <div id="middle">
-                    <h1>songwriting<h1>
-                    <h2>02</h2>
-                </div>
-            </div>
-
-            <div class="column">
-                <div id="right">
-                    <h1>photography</h1>
-                    <h2>03</h2>
-                </div>
-            </div>
-        </div>
-
-
-        <div id="contact">
-            <div id="center">
-                <div id="damian">Damian Chen | &nbsp;</div>
-                    <div id="instagram">
-                        <a href="https://www.instagram.com/d.amixn_/">Instagram &nbsp;</a>                             
+            <!-- Weather widget -->
+            <aside
+                id="weather-widget"
+                aria-live="polite"
+                aria-label="Current weather"
+            >
+                <div class="weather-inner">
+                    <div class="weather-row">
+                        <img id="weather-icon" alt="" />
+                        <div class="weather-temp" id="weather-temp">--°C</div>
                     </div>
-                    <div id="spotify">
-                        <a href="https://open.spotify.com/artist/0AL0ibVHFnLv26ipDTeo2K?si=dfeQWSMTRJqY_N1xGO5b5Q"">Spotify &nbsp;</a>
+                    <div class="weather-meta">
+                        <span id="weather-desc">Loading…</span>
+                        <span id="weather-city"></span>
                     </div>
-                    <div id="linkedin">
-                        <a href="https://www.linkedin.com/in/damian-chen-1b262b254/">LinkedIn &nbsp;</a>
-                    </div>    
-                    <div id="email">
-                        <a href="mailto:damianchen@outlook.co.nz">Email</a>
-                    </div>      
+                </div>
+            </aside>
+        </header>
+
+        <section id="portfolio" class="section">
+            <div class="portfolio-header">
+                <h1>Portfolio</h1>
+                <p class="subtitle">
+                    Swipe, drag, or use keys to browse my work
+                </p>
             </div>
-                                     
-        </div>       
 
+            <section
+                class="carousel"
+                aria-roledescription="carousel"
+                aria-label="Portfolio works"
+            >
+                <div class="carousel-viewport" tabindex="0" aria-live="polite">
+                    <ul class="carousel-track">
+                        <!-- Replace src with your real assets -->
+                        <li
+                            class="carousel-slide"
+                            data-title="Visionary Series"
+                        >
+                            <a
+                                class="slide-link"
+                                href="#"
+                                aria-label="Open Visionary Series details"
+                            >
+                                <figure class="slide-media">
+                                    <img
+                                        src="img/portfolio/visionary-1.jpg"
+                                        alt="Visionary Series cover image"
+                                        loading="lazy"
+                                    />
+                                </figure>
+                                <figcaption class="slide-caption">
+                                    <h2>Visionary Series</h2>
+                                    <p>Photography • 2025</p>
+                                </figcaption>
+                            </a>
+                        </li>
 
-</body>
+                        <li class="carousel-slide" data-title="City Nights">
+                            <a
+                                class="slide-link"
+                                href="#"
+                                aria-label="Open City Nights details"
+                            >
+                                <figure class="slide-media">
+                                    <img
+                                        src="img/portfolio/city-nights.jpg"
+                                        alt="City Nights portfolio image"
+                                        loading="lazy"
+                                    />
+                                </figure>
+                                <figcaption class="slide-caption">
+                                    <h2>City Nights</h2>
+                                    <p>Videography • 2024</p>
+                                </figcaption>
+                            </a>
+                        </li>
 
+                        <li class="carousel-slide" data-title="Minimal UI Kit">
+                            <a
+                                class="slide-link"
+                                href="#"
+                                aria-label="Open Minimal UI Kit details"
+                            >
+                                <figure class="slide-media">
+                                    <img
+                                        src="img/portfolio/minimal-ui.jpg"
+                                        alt="Minimal UI Kit preview"
+                                        loading="lazy"
+                                    />
+                                </figure>
+                                <figcaption class="slide-caption">
+                                    <h2>Minimal UI Kit</h2>
+                                    <p>UI/UX • 2025</p>
+                                </figcaption>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Indicators (kept) -->
+                <div
+                    class="carousel-indicators"
+                    role="tablist"
+                    aria-label="Slide indicators"
+                ></div>
+            </section>
+        </section>
+
+        <footer id="contact" class="section">
+            <div id="center" class="contact-row">
+                <div id="damian">Damian Chen |&nbsp;</div>
+                <div id="instagram">
+                    <a
+                        href="https://www.instagram.com/d.amixn_/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >Instagram&nbsp;</a
+                    >
+                </div>
+                <div id="spotify">
+                    <a
+                        href="https://open.spotify.com/artist/0AL0ibVHFnLv26ipDTeo2K?si=dfeQWSMTRJqY_N1xGO5b5Q"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >Spotify&nbsp;</a
+                    >
+                </div>
+                <div id="linkedin">
+                    <a
+                        href="https://www.linkedin.com/in/damian-chen-1b262b254/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >LinkedIn&nbsp;</a
+                    >
+                </div>
+                <div id="email">
+                    <a href="mailto:damianchen@outlook.co.nz">Email</a>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
